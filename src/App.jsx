@@ -2,6 +2,7 @@ import { Accordian } from "./Components/1-Accordian"
 import { RandomColor } from "./Components/2-RandomColorGenerator"
 import { StarRatingComponent } from "./Components/3-StarRating"
 import ImageSlider from "./Components/4-ImageSlider/index"
+import { LoadMoreProduct } from "./Components/5-LoadMoreButtons"
 
 
 function App() {
@@ -12,7 +13,9 @@ function App() {
     {/* <RandomColor/> */}
     {/* <StarRatingComponent noOfStars = {7}/> */}
 
-    <ImageSlider />
+    {/* <ImageSlider /> */}
+
+    <LoadMoreProduct/>
 
   </div>
 }

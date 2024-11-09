@@ -23,7 +23,7 @@ export default function ImageSlider(){
     }
 
     return <div className="min-h-svh w-full bg-slate-900 flex flex-col justify-center items-center">
-    <button onClick={()=>fetchImages("https://picsum.photos/v2/list",1,5)} className="bg-gray-300 rounded p-2">Fetch Image</button>
+    <button onClick={()=>fetchImages("https://picsum.photos/v2/list",1,10)} className="bg-gray-300 rounded p-2">Fetch Image</button>
 
     {(loading) 
     ? <h2 className="text-3xl text-white">Loading...</h2>
@@ -40,10 +40,10 @@ export default function ImageSlider(){
 
     <div className="indicators flex">
         {(images.length>0) && images.map((_,index) => {
-            return <button className=" bg-black p-2 m-2 rounded-full" style={{backgroundColor : (currentSlide===index) ? "white" : "grey"}} key={index} onClick={() => setCurrentSlide(index)}></button>
+            return <button className=" bg-black p-2 m-2 rounded-full" style={{backgroundColor : (currentSlide===index) ? "cyan" : "hotpink"}} key={index} onClick={() => setCurrentSlide(index)}></button>
         })}
     </div>
-    
+
     </div>
 
 
